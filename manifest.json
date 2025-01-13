@@ -1,0 +1,17 @@
+{
+    "name": "Reveal Grades",
+    "version": "1.0",
+    "description": "Removes display:none from the card-academics div on student.bodwell.edu.",
+    "manifest_version": 3,
+    "permissions": [],
+    "content_scripts": [
+      {
+        "matches": ["https://student.bodwell.edu/?page=dashboard"],
+        "js": ["content-script.js"]
+      }],
+      "action": {
+        "default_popup": "hello.html",
+        "default_icon": "hello_extensions.png"
+  }
+}
+  
